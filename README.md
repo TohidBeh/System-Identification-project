@@ -1,2 +1,5 @@
-# System-Identification-project
-Identification of an unknown LTI system and controller design using MATLAB and Simulink 
+In this project, an unknown linear time-invariant (LTI) system was analyzed and modeled using both time domain and frequency domain system identification techniques. The internal dynamics of the system were treated as a black box, and multiple candidate transfer functions were estimated based on experimental input–output data.
+
+First and second order models were obtained by analyzing the step response of the system and extracting key dynamic parameters such as rise time, settling time, overshoot, and steady state behaviors. These models were validated by comparing their simulated responses with the real system output. In parallel, frequency-response analysis was performed by exciting the system with sinusoidal inputs at different frequencies and measuring magnitude and phase shifts. Using curve fitting tools in MATLAB, a higher-order transfer function was identified from the experimental Bode data.
+
+After comparing multiple estimated models in both time and frequency domains, classical control techniques were applied to design suitable controllers. Root-locus analysis, stability margins, and frequencydomain specifications were used to design compensators that satisfied performance requirements such as low overshoot, fast settling time, and zero steady state error. All models and controllers were implemented and validated in MATLAB and Simulink, and their closed-loop performance was compared against the original black-box system.
